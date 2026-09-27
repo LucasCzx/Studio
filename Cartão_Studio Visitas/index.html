@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<!--
+  Studio Glamourosas — Cartão de visitas digital
+  © 2026 Studio Glamourosas — Todos os direitos reservados.
+  Este código não pode ser copiado, redistribuído ou reutilizado
+  sem autorização prévia da responsável pelo Studio Glamourosas.
+-->
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; font-src https://fonts.gstatic.com; img-src 'self' data:; frame-ancestors 'none'; base-uri 'self';">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>Studio Glamourosas — Cartão Digital</title>
+<meta name="description" content="Studio Glamourosas: cílios, sobrancelhas, depilação e mais. Fale agora pelo WhatsApp oficial.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<!--
+  ================================================================
+  ÁREA DE ALTERAÇÃO RÁPIDA
+  Os principais textos, imagens e links estão organizados no início
+  do script.js, dentro de SITE_CONFIG.
+
+  - textos: telefone, Instagram e endereço
+  - imagens: referência para futuras imagens
+  - links: Instagram e outros redirecionamentos
+  - whatsapp: número e mensagens automáticas
+  ================================================================
+-->
+
+<div id="loader" aria-hidden="true">
+  <div class="loader-inner">
+    <svg class="loader-lashes" viewBox="0 0 100 60" fill="none" stroke="#B89B72" stroke-width="2.5" stroke-linecap="round">
+      <path class="lash-line" d="M10 35 Q50 5 90 35"/>
+      <path class="lash-line" d="M20 35 Q50 15 80 35"/>
+    </svg>
+
+    <p class="loader-name">Studio <span>Glamourosas</span></p>
+
+    <div class="loader-bar">
+      <span></span>
+    </div>
+  </div>
+</div>
+
+<header>
+  <nav class="nav">
+
+    <a href="#home" class="logo">
+      Studio <span>Glamourosas</span>
+    </a>
+
+    <button id="menuBtn" aria-label="Abrir menu" aria-expanded="false">
+      &#9776;
+    </button>
+
+    <ul id="navList">
+      <li><a href="#home">Início</a></li>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#servicos">Procedimentos</a></li>
+      <li><a href="#cursos">Cursos</a></li>
+      <li><a href="#galeria">Galeria</a></li>
+      <li><a href="#cuidados">Cuidados</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+
+  </nav>
+</header>
+
+<!-- WHATSAPP FLUTUANTE -->
+<a
+  class="fab-whatsapp"
+  href="#"
+  data-whatsapp="geral"
+  data-edit="whatsapp-link"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Falar no WhatsApp"
+>
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+    <path d="M21 11.5a8.5 8.5 0 11-4.1-7.3L21 3l-1 4.4a8.46 8.46 0 011 4.1z"/>
+  </svg>
+
+  <span>Fale comigo</span>
+</a>
+
+<main>
+
+<!-- HOME -->
+<section class="hero" id="home">
+
+  <div class="container">
+
+    <div>
+
+      <p class="eyebrow">
+        Studio Glamourosas · Cartão digital
+      </p>
+
+      <h1>
+        Bem-vinda ao meu studio de beleza
+      </h1>
+
+      <p class="lead">
+        "Aqui você para o tempo e cuida de você."
+      </p>
+
+      <p class="desc">
+        Sou a Juliana. Aqui no Studio Glamourosas eu cuido de cílios,
+        sobrancelhas e depilação com bastante calma e atenção a cada detalhe.
+        Bora conversar?
+      </p>
+
+      <div class="hero-btns">
+
+        <a
+          class="btn btn-primary"
+          href="#"
+          data-whatsapp="agendamento"
+          data-edit="whatsapp-link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Me chama no WhatsApp
+        </a>
+
+        <a class="btn btn-outline" href="#galeria">
+          Ver trabalhos
+        </a>
+
+      </div>
+
+    </div>
+
+    <div class="hero-visual">
+
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+
+      <svg
+        class="hero-illustration"
+        viewBox="0 0 200 200"
+        fill="none"
+      >
+
+        <defs>
+
+          <linearGradient
+            id="lashGrad"
+            x1="0"
+            y1="0"
+            x2="1"
+            y2="1"
+          >
+
+            <stop
+              offset="0%"
+              stop-color="#3A2927"
+            />
+
+            <stop
+              offset="100%"
+              stop-color="#B89B72"
+            />
+
+          </linearGradient>
+
+        </defs>
+
+        <path
+          d="M20 110 C 60 40, 140 40, 180 110"
+          stroke="url(#lashGrad)"
+          stroke-width="4"
+          stroke-linecap="round"
+        />
+
+        <path
+          d="M35 108 L20 78 M55 100 L45 65 M75 95 L70 58 M100 93 L100 55 M125 95 L130 58 M145 100 L155 65 M165 108 L180 78"
+          stroke="url(#lashGrad)"
+          stroke-width="3.2"
+          stroke-linecap="round"
+        />
+
+        <ellipse
+          cx="100"
+          cy="112"
+          rx="26"
+          ry="26"
+          fill="#3A2927"
+        />
+
+        <circle
+          cx="93"
+          cy="104"
+          r="7"
+          fill="#FAF8F6"
+          opacity=".85"
+        />
+
+      </svg>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- SOBRE -->
+<section class="about bg-alt" id="sobre">
+
+  <div class="container">
+
+    <div class="about-photo">
+
+      <svg
+        viewBox="0 0 100 100"
+        fill="none"
+        stroke="#3A2927"
+        stroke-width="2"
+      >
+
+        <rect
+          x="18"
+          y="22"
+          width="64"
+          height="56"
+          rx="6"
+        />
+
+        <path d="M18 40h64"/>
+
+        <circle
+          cx="34"
+          cy="31"
+          r="3"
+          fill="#3A2927"
+          stroke="none"
+        />
+
+        <circle
+          cx="44"
+          cy="31"
+          r="3"
+          fill="#3A2927"
+          stroke="none"
+        />
+
+      </svg>
+
+    </div>
+
+    <div>
+
+      <p class="eyebrow">
+        Sobre o Studio
+      </p>
+
+      <h2>
+        Oi, eu sou a Juliana
+      </h2>
+
+      <p>
+        Sou eu quem atende, do começo ao fim, aqui no Studio Glamourosas —
+        cílios, sobrancelhas e depilação.
+      </p>
+
+      <p>
+        Antes de qualquer procedimento, gosto de conversar um pouco com você:
+        entender o que você tem em mente, o que combina com seu rosto e o que
+        faz sentido pra sua rotina.
+      </p>
+
+      <div class="about-tags">
+        <span>Cílios</span>
+        <span>Sobrancelhas</span>
+        <span>Depilação</span>
+        <span>Higienização rigorosa</span>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- SERVIÇOS -->
+<section id="servicos">
+
+  <div class="container">
+
+    <div class="sec-head">
+
+      <p class="eyebrow">
+        Procedimentos
+      </p>
+
+      <h2>
+        Cílios, sobrancelhas ou depilação?
+      </h2>
+
+      <p class="sec-sub">
+        Cada pele e cada rosto pede uma coisa diferente — por isso prefiro
+        combinar tudo com você direto no WhatsApp: o que fazer, o valor e o
+        melhor horário.
+      </p>
+
+      <a
+        class="btn btn-primary"
+        href="#"
+        data-whatsapp="servicos"
+        data-edit="whatsapp-link"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Chamar no WhatsApp
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- CURSOS -->
+<section class="bg-alt" id="cursos">
+
+  <div class="container">
+
+    <div class="sec-head">
+
+      <p class="eyebrow">
+        Cursos
+      </p>
+
+      <h2>
+        Quer aprender também?
+      </h2>
+
+      <p class="sec-sub">
+        A Juliana também oferece cursos para quem deseja aprender e se
+        aperfeiçoar na área da beleza. Para saber sobre conteúdo, valores,
+        datas e inscrições, fale diretamente pelo WhatsApp.
+      </p>
+
+      <a
+        class="btn btn-primary"
+        href="#"
+        data-whatsapp="curso"
+        data-edit="whatsapp-link"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Quero saber sobre os cursos
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- GALERIA -->
+<section class="bg-alt" id="galeria">
+
+  <div class="container">
+
+    <div class="sec-head">
+
+      <p class="eyebrow">
+        Galeria
+      </p>
+
+      <h2>
+        Trabalhos realizados
+      </h2>
+
+    </div>
+
+    <div class="gallery-grid">
+
+      <div class="g-item" data-label="Volume Russo">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.5">
+          <path d="M3 17c3-12 18-12 21 0"/>
+        </svg>
+      </div>
+
+      <div class="g-item" data-label="Antes e depois">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.5">
+          <path d="M4 18c4-10 12-10 16 0"/>
+        </svg>
+      </div>
+
+      <div class="g-item" data-label="Lash Lifting">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.5">
+          <circle cx="12" cy="12" r="7"/>
+        </svg>
+      </div>
+
+      <div class="g-item" data-label="Volume Brasileiro">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.5">
+          <path d="M2 12s4-6 10-6 10 6 10 6-4 6-10 6-10-6-10-6z"/>
+        </svg>
+      </div>
+
+      <div class="g-item" data-label="Detalhe do olhar">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.5">
+          <path d="M4 12h16" stroke-linecap="round"/>
+        </svg>
+      </div>
+
+      <div class="g-item" data-label="Resultado natural">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.5">
+          <path d="M3 17c3-12 18-12 21 0"/>
+        </svg>
+      </div>
+
+    </div>
+
+    <div class="sec-cta">
+
+      <a
+        class="btn btn-primary"
+        href="#"
+        data-whatsapp="galeria"
+        data-edit="whatsapp-link"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Quero um resultado desses
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- CUIDADOS -->
+<section id="cuidados">
+
+  <div class="container">
+
+    <div class="sec-head">
+
+      <p class="eyebrow">
+        Cuidados
+      </p>
+
+      <h2>
+        Antes e depois do procedimento
+      </h2>
+
+    </div>
+
+    <div class="care-grid">
+
+      <div class="care-item">
+
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+        </svg>
+
+        <h4>
+          Evite produtos oleosos
+        </h4>
+
+        <p>
+          Nada de creme ou maquiagem oleosa perto dos olhos, tá bom?
+        </p>
+
+      </div>
+
+
+      <div class="care-item">
+
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <circle cx="12" cy="12" r="9"/>
+          <path d="M9 9l6 6M15 9l-6 6"/>
+        </svg>
+
+        <h4>
+          Não esfregue os cílios
+        </h4>
+
+        <p>
+          Evite atrito e removedores de maquiagem à base de óleo.
+        </p>
+
+      </div>
+
+
+      <div class="care-item">
+
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M4 12h16M4 6h16M4 18h16" stroke-linecap="round"/>
+        </svg>
+
+        <h4>
+          Higienize direitinho
+        </h4>
+
+        <p>
+          Uso um shampoo específico pra cílios que eu mesma indico pra você.
+        </p>
+
+      </div>
+
+
+      <div class="care-item">
+
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <circle cx="12" cy="12" r="9"/>
+          <path d="M12 7v5l3 3"/>
+        </svg>
+
+        <h4>
+          Volte pra manutenção
+        </h4>
+
+        <p>
+          Combinamos juntas o melhor intervalo pra manter tudo bonito.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- CTA FINAL -->
+<section class="final-cta">
+
+  <div class="container">
+
+    <h2>
+      Vamos conversar?
+    </h2>
+
+    <p>
+      Atendo poucas pessoas por dia pra dar atenção de verdade a cada uma.
+      Me chama no WhatsApp e a gente combina tudo com calma.
+    </p>
+
+    <a
+      class="btn btn-primary"
+      href="#"
+      data-whatsapp="agendamento"
+      data-edit="whatsapp-link"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Chamar no WhatsApp
+    </a>
+
+  </div>
+
+</section>
+
+
+<!-- CONTATO -->
+<section class="contact" id="contato">
+
+  <div class="container">
+
+    <div class="sec-head">
+
+      <p class="eyebrow">
+        Contato oficial
+      </p>
+
+      <h2>
+        Fale direto comigo
+      </h2>
+
+    </div>
+
+    <div class="contact-grid">
+
+      <a
+        class="contact-item"
+        href="#"
+        data-whatsapp="geral"
+        data-edit="whatsapp-link"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M21 11.5a8.5 8.5 0 11-4.1-7.3L21 3l-1 4.4a8.46 8.46 0 011 4.1z"/>
+        </svg>
+
+        <h4>
+          WhatsApp
+        </h4>
+
+        <p data-edit="phone-display">
+          (84) 98707-6878
+        </p>
+
+      </a>
+
+
+      <a
+        class="contact-item"
+        href="https://www.instagram.com/studio_glamourosas/"
+        data-edit="instagram-link"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <rect x="3" y="3" width="18" height="18" rx="5"/>
+          <circle cx="12" cy="12" r="4"/>
+        </svg>
+
+        <h4>
+          Instagram
+        </h4>
+
+        <p data-edit="instagram-handle">
+          @studio_glamourosas
+        </p>
+
+      </a>
+
+
+      <div class="contact-item">
+
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M12 22s7-6.5 7-12a7 7 0 10-14 0c0 5.5 7 12 7 12z"/>
+          <circle cx="12" cy="10" r="2.5"/>
+        </svg>
+
+        <h4>
+          Localização
+        </h4>
+
+        <p data-edit="address">
+          Rua dos Caicos, Natal, Rio Grande do Norte 59037-700
+        </p>
+
+      </div>
+
+    </div>
+
+    <p class="security-note">
+      🔒 Atendo e vendo só por este WhatsApp e Instagram.
+      Se alguém se passar pelo Studio Glamourosas em outro lugar,
+      não sou eu — pode desconfiar.
+    </p>
+
+  </div>
+
+</section>
+
+</main>
+
+
+<footer>
+
+  <div class="container">
+
+    <div class="footer-grid">
+
+      <div>
+        <h4>Studio Glamourosas</h4>
+        <p>Feito com carinho pela Juliana.</p>
+      </div>
+
+      <div>
+
+        <h4>Navegação</h4>
+
+        <ul class="footer-links">
+
+          <li>
+            <a href="#sobre">Sobre</a>
+          </li>
+
+          <li>
+            <a href="#servicos">Procedimentos</a>
+          </li>
+
+          <li>
+            <a href="#cursos">Cursos</a>
+          </li>
+
+          <li>
+            <a href="#galeria">Galeria</a>
+          </li>
+
+          <li>
+            <a href="#cuidados">Cuidados</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div>
+
+        <h4>Contato oficial</h4>
+
+        <ul class="footer-links">
+
+          <li>
+
+            <a
+              href="#"
+              data-whatsapp="geral"
+              data-edit="whatsapp-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              WhatsApp
+            </a>
+
+          </li>
+
+          <li>
+
+            <a
+              href="https://www.instagram.com/studio_glamourosas/"
+              data-edit="instagram-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Instagram
+            </a>
+
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+      <span>
+        &copy; 2026 Studio Glamourosas. Todos os direitos reservados.
+      </span>
+
+      <span>
+        Política de Privacidade
+      </span>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+<script src="script.js" defer></script>
+
+</body>
+</html>
